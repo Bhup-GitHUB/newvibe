@@ -5,6 +5,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://mentiting.vercel.app'),
   title: 'Mentiting — Mentor-led Productivity SaaS',
   description:
     'Mentiting helps teams turn mentorship into measurable outcomes with collaborative goals, guided sessions, and actionable insights.',
@@ -21,15 +22,18 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.ico',
   },
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: 'Mentiting — Mentor-led Productivity SaaS',
     description:
       'Mentiting helps teams turn mentorship into measurable outcomes with collaborative goals, guided sessions, and actionable insights.',
-    url: 'https://mentiting.example.com',
+    url: '/',
     siteName: 'Mentiting',
     images: [
       {
-        url: '/og-image.png',
+        url: '/og-image.svg',
         width: 1200,
         height: 630,
         alt: 'Mentiting preview',
