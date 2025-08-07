@@ -1,3 +1,5 @@
+"use client"
+
 export default function CTA() {
   return (
     <section id="cta" className="py-20">
